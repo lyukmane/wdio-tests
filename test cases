@@ -1,0 +1,57 @@
+test case 1
+Title: Check title "Welcome to GitHub!
+Let’s begin the adventure" in the signup page
+
+1. go to https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home
+2. pay attention to the animated text
+
+ER: the text ""Welcome to GitHub!
+Let’s begin the adventure"" is displayed as a printable animation
+
+
+
+test case 2
+Title: Signup to GitHub with empty data
+
+1. go to https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home
+2. click "Continue" button
+
+ER: User stay on the same page
+
+
+test case 3
+Title: Signup to GitHub with not valid email
+
+1. go to https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home
+2. fill in the field "enter your email" with data "fdsfsfsfsf"
+3. click "Continue" button
+
+ER: "Email is invalid or already taken" massage was displayed. User stay on the same page
+
+
+test case 4
+Title: Signup to GitHub with valid email and empty password
+
+1. go to https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home
+2. fill in the field "enter your email" with data "jilax33393@alvisani.com"
+3. click "Continue" button
+4. click "Continue" button or Enter
+
+
+ER: User stay on the same page
+
+test case 5
+Title: Signup to GitHub with valid email and password with one character 
+
+1. go to https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home
+2. fill in the field "enter your email" with data "jilax33393@alvisani.com"
+3. click "Continue" button
+4. fill in the field "Create a password" with data "1" or another symbol
+5. click "Continue" button or Enter
+
+
+ER: "Password is too short
+	Make sure it's at least 15 characters OR at least 8 characters including a number and a lowercase letter." massage was displayed. User stay on the same page
+
+
+
