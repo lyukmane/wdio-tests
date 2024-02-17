@@ -6,10 +6,10 @@ class SingUp{
     get inputUsername() { return $('#login')}
     get inputYesNo() { return $('#opt_in')}
 
-    get buttonContinueForEmail() { return $('button[data-optimizely-event="click.signup_continue.email"]')}
-    get buttonContinueForPassword() { return $('button[data-optimizely-event="click.signup_continue.password"]')}
-    get buttonContinueForUsername() { return $('button[data-optimizely-event="click.signup_continue.username"]')}
-    get buttonContinueForYesNo() { return $('button[data-optimizely-event="click.signup_continue.opt-in"]')}
+    get buttonContinueForEmail() { return $('button[data-continue-to="password-container"]')}
+    get buttonContinueForPassword() { return $('button[data-continue-to="username-container"]')}
+    get buttonContinueForUsername() { return $('button[data-continue-to="opt-in-container"]')}
+    get buttonContinueForYesNo() { return $('button[data-continue-to="captcha-and-submit-container"]')}
 
     async setEmailInput(value){
         await this.inputEmail.addValue(value)

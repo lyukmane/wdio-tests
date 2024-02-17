@@ -300,9 +300,9 @@ describe("Webdriverio main page", () => {
         await expect(SingUp.titleH1).toHaveText("Welcome to GitHub! Let's begin the adventure")
         await expect(SingUp.titleH1).toBeDisplayed()
 
-        await SingUp.inputEmail.waitForClickable({ timeout: 3000 });
+        await SingUp.inputEmail.waitForClickable({ timeout: 5000 });
         await SingUp.setEmailInput("jilax33393@alvisani.com")
-        await SingUp.buttonContinueForEmail.waitForClickable({ timeout: 3000 });
+        await SingUp.buttonContinueForEmail.waitForClickable({ timeout: 5000 });
         await SingUp.clickOnContinueBtnForEmail()
 
         await SingUp.inputPassword.waitForClickable({ timeout: 3000 });
@@ -391,3 +391,4 @@ describe("Webdriverio main page", () => {
     });
     
 });
+

@@ -1,7 +1,7 @@
 class MainPage{
 
     get buttonSingUp() { return $('(//a[contains(.,"Sign up")])[1]')}
-    get titleH2() { return $('//h2[contains(.,"The place")]')}
+    get titleH2() { return $('//h2[contains(.,"Over")]')}
     get buttonStatrFree() {return $('(//a[contains(.,"Start a free")])[3]')}
     get buttonSubsribe() { return $('//a[contains(.,"Sub")]')}
     get buttonSearch() { return $('button[data-target="qbsearch-input.inputButton"]')}
